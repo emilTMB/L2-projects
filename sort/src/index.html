@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сортировка визуализации</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/assets/styles/style.css">
+</head>
+
+<body>
+    <div class="controls">
+        <h1>Сортировка визуализации</h1>
+        <div class="array__container">
+            <label for="inputArray">Введите массив чисел (через запятую):</label>
+            <input type="text" id="inputArray" value="random">
+            <button id="visibleArr">Показать выбранный массив</button>
+        </div>
+        <div class="array__container-item">
+            <label for="algorithm">Выберите алгоритм сортировки:</label>
+            <select id="algorithm">
+                <option value="bubble">Сортировка пузырьком</option>
+                <option value="selection">Сортировка выбором</option>
+                <option value="insertion">Сортировка вставками</option>
+                <option value="quick">Быстрая сортировка</option>
+                <option value="merge">Сортировка слиянием</option>
+            </select>
+            <button id="start">Старт</button>
+            <button id="stop">Стоп</button>
+        </div>
+    </div>
+    <div class="visualization">
+        <div class="array"></div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
